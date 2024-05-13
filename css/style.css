@@ -1,0 +1,52 @@
+body{
+    padding: 1.5rem;
+}
+
+header{
+    height: 100vh;
+}
+
+head {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#483D8B ;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    z-index: -10;
+    opacity: 65%;
+}
+
+#listaDeTarefas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.2rem;
+}
+
+form{
+    max-width: 600px;
+    margin: 1.78rem auto;
+
+    .botoes{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.apagando {
+    animation: fadeout 1s;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
